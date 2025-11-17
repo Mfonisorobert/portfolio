@@ -7,6 +7,12 @@ html {
   scroll-behavior: smooth;
 }
 
+/* This came with ProgressBar so that it can read from 0 till the required % */
+@keyframes bounceWidth {
+  0% { width: 0; }
+  80% { width: var(--final-width); }
+  100% { width: calc(var(--final-width) + 5px); }
+}
 
 /* 
 :root {

@@ -1,5 +1,6 @@
 import React from 'react'
 import AboutImage from '../assets/am.jpg'
+import ProgressBar from './ProgressBar'
 
 const About = () => {
   return (
@@ -17,7 +18,7 @@ const About = () => {
                 With a foundation in both UI/UX and frontend technologies, 
                 I strive to create a seamless and efficient user experiences.
             </p>
-            <div className='space-y-4'>
+            {/* <div className='space-y-4'>
                 <div className='flex items-center'>
                     <label htmlFor="htmlandcss" className='w-4/12 md:w-3/12'>
                     HTML & CSS
@@ -29,7 +30,7 @@ const About = () => {
                 </div>
                 </div>
                 <div className='flex items-center'>
-                    <label htmlFor="htmlandcss" className='w-4/12 md:w-3/12'>
+                    <SkillBar label htmlFor="htmlandcss" className='w-4/12 md:w-3/12'>
                     React JS
                     </label>
                 <div className='grow bg-gray-800 rounded-full h-2.5'>
@@ -48,7 +49,24 @@ const About = () => {
                     </div>
                 </div>
                 </div>
-            </div>
+            </div> */}
+
+
+            {/* This is when you're not adding the digit to it */}
+    {/* <div className="space-y-6">
+      <ProgressBar label="HTML & CSS" percentage="80%" />
+      <ProgressBar label="React JS" percentage="90%" />
+      <ProgressBar label="Node JS" percentage="70%" />
+    </div> */}
+ 
+{/* This has a little delay before it start moving */}
+{/* It has link with ProgressBar.jsx */}
+<div className="space-y-6 mt-10">
+      <ProgressBar label="HTML & CSS" percentage="90%" delay={0} />
+      <ProgressBar label="React JS" percentage="85%" delay={200} />
+      <ProgressBar label="Node JS" percentage="70%" delay={400} />
+    </div>
+
             <div className='mt-6 flex justify-between text-center'>
                 <div>
                     <h3 className='text-2xl font-bold text-transparent bg-clip-text
