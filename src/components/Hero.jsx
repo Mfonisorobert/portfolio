@@ -59,7 +59,8 @@ const Hero = () => {
   src={HeroImage}
   alt="Hero"
   className="mx-auto mb-8 w-48 h-48 rounded-full"
-  animate={{ y: [0, -10, 0] }} // up 10px then back
+  animate={{ y: [0, -10, 0], rotate: [0, 5, 0], scale: [1, 1.05, 1] }}
+ // up 10px then back
   transition={{ duration: 3, ease: "easeInOut", repeat: Infinity }}
 />
 {/* It ends here */}

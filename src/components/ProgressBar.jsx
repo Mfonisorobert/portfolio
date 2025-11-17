@@ -90,7 +90,7 @@ function ProgressBar({ label, percentage, delay }) {
       >
         <div
           className="
-            bg-gradient-to-r from-pink-500 to-blue-500 h-2.5 rounded
+            bg-gradient-to-r from-green-400 to-blue-500 h-2.5 rounded
             shadow-[0_0_10px_rgba(0,255,0,0.6)]
           "
           style={{
