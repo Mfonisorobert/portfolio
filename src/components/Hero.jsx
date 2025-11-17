@@ -44,7 +44,7 @@ const Hero = () => {
     <div className='bg-black text-white text-center py-16'>
         
         {/* Animated Image */}
-        <motion.img 
+        {/* <motion.img 
           src={HeroImage}
           alt=""
           className='mx-auto mb-8 w-48 h-48 rounded-full object-cover'
@@ -52,7 +52,18 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 2, ease: "easeOut" }}
           whileHover={{ scale: 1.08 }}
-        />
+        /> */}
+
+{/* If you want the image to float up and down infinitly, use this */}
+<motion.img
+  src={HeroImage}
+  alt="Hero"
+  className="mx-auto mb-8 w-48 h-48 rounded-full"
+  animate={{ y: [0, -10, 0] }} // up 10px then back
+  transition={{ duration: 3, ease: "easeInOut", repeat: Infinity }}
+/>
+{/* It ends here */}
+
 
         <h1 className='text-3xl font-bold'>
             I'm{" "}
