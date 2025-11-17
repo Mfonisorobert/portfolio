@@ -12,10 +12,10 @@ const About = () => {
                 className='w-72 h-80 rounded-md object-cover mb-8 md:mb-0'/>
             <div className='flex-1'>
             <p className='text-lg mb-8'>
-                I am a passionate Frontend web developer with a focus
-                on building modern and responsive web applications. With a foundation
-                in both UI/UX and frontend technologies, I strive to create
-                a seamless and efficient user experiences.
+                I'm a passionate Software Engineer with specialty in Frontend web development 
+                focusing on building modern and responsive web applications. 
+                With a foundation in both UI/UX and frontend technologies, 
+                I strive to create a seamless and efficient user experiences.
             </p>
             <div className='space-y-4'>
                 <div className='flex items-center'>
