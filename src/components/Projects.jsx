@@ -62,7 +62,7 @@ const Projects = () => {
                 transform transistion-transform duration-300 hover:scale-105'
                 >
                 <img src={project.image} alt={project.name} className='
-                        rounded-lg mb-4 w-full h-48 object-fill hover:scale-105 duration-300' />
+                        rounded-lg mb-4 w-full hover:scale-105 duration-300' />
                         <h3 className='text-2xl font-bold mb-2'>{project.name}</h3>
                         <p className='text-gray-400 mb-4'>{project.technologies}</p>
                         <a href={project.github} className='inline-block bg-gradient-to-r
